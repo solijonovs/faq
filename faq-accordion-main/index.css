@@ -1,0 +1,109 @@
+ html {
+    background-color: hsl(197, 28%, 83%);
+    color: hsl(292, 42%, 14%);
+    font-size: 16px;
+    font-family: 'Work Snas';
+    font-weight: 400px;
+ }
+
+ h1 {
+    font-weight: 700px;
+ }
+
+ p {
+    color: hsl(292, 16%, 49%);
+ }
+
+ body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+ }
+
+ main {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+ }
+ 
+ .container {
+    top: 200px;
+    bottom: 200px;
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    box-shadow: 8px 8px 12px rgb(0, 0, 0, 0.2);
+ }
+
+ .title {
+    width: 600px;
+    height: auto;
+    border: 1px solid rgb(237, 237, 237);
+    display: flexbox;
+    background-color: white;
+    border-radius: 10px;;
+    box-shadow: 4px 4px 12px rgb(0, 0, 0, 0.2);
+ }
+
+ #top {
+    justify-content: start;
+ }
+
+ .box {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+ }
+
+ .box h3, img {
+    margin-right: 20px;
+    margin-left: 20px;
+ }
+
+ .que {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: auto;
+ }
+ 
+ .text {
+    display: none;
+ }
+    
+.attribution { 
+    font-size: 11px; text-align: center; 
+    
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        background-image: url('./assets/images/background-pattern-mobile.svg');
+        width:  350px;
+        top: 0px;
+        height: auto;
+        min-height: 975px;
+
+    }
+
+    .title {
+        width: 250px;
+        min-height: 625px;
+    }
+}
+
+
